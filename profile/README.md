@@ -16,7 +16,7 @@
 [![Temp License](https://img.shields.io/badge/Temp%20License-2865E0?style=for-the-badge&logo=rocket&logoColor=white)](https://purchase.groupdocs.com/temporary-license)
 
 ## Latest Search News & Updates
-* **NEW:** GroupDocs.Search for Python via .NET 26.10, the first Python release: engine 26.10 with the .NET 10 runtime embedded, Python 3.5 - 3.14 on Windows, Linux and macOS (Intel and Apple Silicon), the engine's events as Python handlers, and custom text extractors, loggers and OCR connectors as plain Python objects. The wheels are on [releases.groupdocs.com](https://releases.groupdocs.com/search/python-net/), and come to PyPI as `groupdocs-search-net` once PyPI raises the package's file-size limit. [Release notes](https://releases.groupdocs.com/search/python-net/release-notes/).
+* **NEW:** [GroupDocs.Search for Python via .NET 26.10](https://pypi.org/project/groupdocs-search-net/) on PyPI, the first Python release: engine 26.10 with the .NET 10 runtime embedded, Python 3.5 - 3.14 on Windows, Linux and macOS (Intel and Apple Silicon), the engine's events as Python handlers, and custom text extractors, loggers and OCR connectors as plain Python objects. [Release notes](https://releases.groupdocs.com/search/python-net/release-notes/).
 * Published [GroupDocs.Search 26.10](https://www.nuget.org/packages/GroupDocs.Search/) for .NET on NuGet: a new index format that needs about half the memory, opens 2 - 4 times faster and applies every change atomically; `IndexUpdater` converts indexes made by versions 22.7 - 26.8. [Migration notes](https://docs.groupdocs.com/search/net/migration-notes/).
 * Published GroupDocs.Search 26.9.1 for Java on the [GroupDocs Maven repository](https://releases.groupdocs.com/java/repo/): a new index format, to which `IndexUpdater` upgrades indexes made by versions 22.7 - 25.4, HTML extracted by the engine itself, and fixes for merging large indexes and deleting documents. [Release notes](https://releases.groupdocs.com/search/java/release-notes/).
 * The [GroupDocs.Search MCP server](https://docs.groupdocs.com/search/mcp/) 26.10 lets AI agents index a folder and search it **locally**, and ships as a Docker image.
@@ -86,9 +86,9 @@ for (let i = 0; i < result.getDocumentCount(); i++) {
 ```
 
 ### Python Document Search (Python via .NET)
-A self-contained Python package with the .NET runtime embedded, Python 3.5 - 3.14. Until PyPI carries it, install the wheel for your platform from [releases.groupdocs.com](https://releases.groupdocs.com/search/python-net/).
-* **[GroupDocs.Search-for-Python-via-.NET](https://github.com/groupdocs-search/GroupDocs.Search-for-Python-via-.NET)**: Runnable examples for every documented scenario.
-* [Releases](https://releases.groupdocs.com/search/python-net/) | [Docs](https://docs.groupdocs.com/search/python-net/) | [API Reference](https://reference.groupdocs.com/search/python-net/) | [Release Notes](https://releases.groupdocs.com/search/python-net/release-notes/)
+A self-contained Python package with the .NET runtime embedded: `pip install groupdocs-search-net`, Python 3.5 - 3.14.
+* **[GroupDocs.Search-for-Python-via-.NET](https://github.com/groupdocs-search/GroupDocs.Search-for-Python-via-.NET)**: Runnable examples for every documented scenario, with a Dockerfile.
+* [PyPI](https://pypi.org/project/groupdocs-search-net/) | [Docs](https://docs.groupdocs.com/search/python-net/) | [API Reference](https://reference.groupdocs.com/search/python-net/) | [Release Notes](https://releases.groupdocs.com/search/python-net/release-notes/)
 
 ```python
 from groupdocs.search import Index
@@ -138,7 +138,7 @@ docker run --rm -i -v $(pwd)/documents:/data ghcr.io/groupdocs-search/search-net
 - .NET: `dotnet add package GroupDocs.Search`
 - Java: add `com.groupdocs:groupdocs-search` from the GroupDocs repository, `https://releases.groupdocs.com/java/repo/`
 - Node.js: `npm install @groupdocs/groupdocs.search`
-- Python: download the wheel for your platform from [releases.groupdocs.com](https://releases.groupdocs.com/search/python-net/) and run `pip install` on the file; on PyPI it will be `pip install groupdocs-search-net`
+- Python: `pip install groupdocs-search-net`
 - Run the sample projects from the repositories above to index documents and execute search queries.
 
 ## Technical Support & Resources
